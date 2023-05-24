@@ -12,14 +12,24 @@
         <p> This site shows the the wordl response to covid 19 vaccination
             To navigate to the data sets and analysis, select from the menu below:
         </p>
-        <button type="button" class="btn btn-primary" onclick="world_summary()">World summary</button>
+        <button type="button" class="btn world_summary" onclick="world_summary()">World summary</button>
         <script>
             function world_summary(){
-                
+             window.location= 'http://127.0.0.1:5000/world'   
             }
         </script>
-        <button type="button" class="btn btn-secondary">Global View</button>
-        <button type="button" class="btn btn-success">Data Sources</button>
+        <button type="button" class="btn global_view" onclick="global_view()">Global View</button>
+        <script>
+            function global_view(){
+             window.location= 'http://127.0.0.1:5000/global'   
+            }
+        </script>
+        <button type="button" class="btn data_sources" onclick="datasource()">Data Sources</button>
+        <script>
+            function datasource(){
+             window.location= 'http://127.0.0.1:5000/datasource'   
+            }
+        </script>
     </body>
 
 </html>
